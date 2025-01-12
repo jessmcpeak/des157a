@@ -4,18 +4,18 @@ body {
 }
 
 #record-disc {
-    margin: auto;
     aspect-ratio: 1 / 1;
-    /* border-radius: 1000px; */
-    border: 1px solid white;
-    animation-name: disc-spin;
-    animation-iteration-count: infinite;
+    width: 80vw;
+    margin: auto;
+    border-radius: 1000px;
+    border: 2px solid white;
+    animation: disc-spin 10s linear 0s infinite forwards;
 }
 
 @keyframes disc-spin {
-    0% {transform: rotate(0deg);}
-    50% {transform: rotate(180deg);}
-    100% {transform: rotate(360deg);}
+    0% {transform: perspective(1000px) rotateX(70deg) rotateZ(0deg);}
+    50% {transform: perspective(1000px) rotateX(70deg) rotateZ(180deg);}
+    100% {transform: perspective(1000px) rotateX(70deg) rotateZ(360deg);}
 }
 
 h1, h2, p, ul {
