@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+#record-disc {
+    margin: auto;
+    aspect-ratio: 1 / 1;
+    /* border-radius: 1000px; */
+    border: 1px solid white;
+    animation-name: disc-spin;
+    animation-iteration-count: infinite;
+}
+
+@keyframes disc-spin {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+}
+
+main section {
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main section ul {
+    list-style-type: none;
+}
+
+main section ul li {
+}
+
+main section ul li a {
+    display: block;
+    padding: 3em 2em 1em 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: end;
+    color: white;
+}
