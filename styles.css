@@ -5,22 +5,33 @@ body {
 
 #record-disc {
     aspect-ratio: 1 / 1;
-    width: 80vw;
+    width: 53vw;
     margin: auto;
     border-radius: 1000px;
-    border: 2px solid white;
+    border: 10px solid white;
     animation: disc-spin 10s linear 0s infinite forwards;
 }
 
+#disc-label {
+    margin: auto;
+    aspect-ratio: 1 / 1;
+    width: 33%;
+    border-radius: 1000px;
+    background-color: white;
+}
+
 @keyframes disc-spin {
-    0% {transform: perspective(1000px) rotateX(70deg) rotateZ(0deg);}
-    50% {transform: perspective(1000px) rotateX(70deg) rotateZ(180deg);}
-    100% {transform: perspective(1000px) rotateX(70deg) rotateZ(360deg);}
+    0% {transform: perspective(1000px) rotateX(80deg) rotateZ(0deg);}
+    100% {transform: perspective(1000px) rotateX(80deg) rotateZ(360deg);}
 }
 
 h1, h2, p, ul {
     margin: 0;
     padding: 0;
+}
+
+h1 {
+    font-size: 2vw;
 }
 
 main {
