@@ -101,7 +101,7 @@ footer p a {
     color: chartreuse;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 810px) {
     main {
         display: flex;
     }
@@ -110,7 +110,17 @@ footer p a {
         flex: 1;
     }
 
+    main section ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section ul li {
+        flex: 1;
+    }
+
     main section ul li a {
+        padding: auto 1em 1em 1em;
         text-align: end;
     }
 
