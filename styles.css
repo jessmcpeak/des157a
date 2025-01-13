@@ -8,20 +8,35 @@ body {
 }
 
 #record-disc {
+    position: absolute;
+    top: -100px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     aspect-ratio: 1 / 1;
-    width: 53vw;
-    margin: auto;
+    width: 200px;
     border-radius: 1000px;
     border: 10px solid white;
+    background-color: black;
     animation: disc-spin 10s linear 0s infinite forwards;
 }
 
+#record-dic p {
+    position: absolute;
+}
+
 #disc-label {
+    position: absolute;
     margin: auto;
     aspect-ratio: 1 / 1;
     width: 33%;
     border-radius: 1000px;
     background-color: white;
+}
+
+#disc-hole {
+    position: absolute;
 }
 
 @keyframes disc-spin {
@@ -34,6 +49,11 @@ h1, h2, p, ul {
     padding: 0;
 }
 
+h1, h2 {
+    padding: 1em;
+    text-align: center;
+}
+
 main {
 }
 
@@ -42,9 +62,6 @@ main section {
 
 h2 {
     margin-top: 1em;
-    padding: 1em;
-    text-align: center;
-    text-transform: uppercase;
 }
 
 main section ul {
@@ -56,7 +73,7 @@ main section ul li {
 
 main section ul li a {
     display: block;
-    padding: 3em 3em 3em 3em;
+    padding: 2em 1em;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
@@ -71,6 +88,34 @@ main section ul li a {
     color: white;
 }
 
-main section ul li a:hover {
-    background-blend-mode: normal;
+footer {
+    padding: 2em 1em 1em 1em;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p a {
+    text-decoration: none;
+    color: chartreuse;
+}
+
+@media screen and (min-width: 750px) {
+    main {
+        display: flex;
+    }
+
+    main section {
+        flex: 1;
+    }
+
+    main section ul li a {
+        text-align: end;
+    }
+
+    main section ul li a:hover {
+        background-blend-mode: normal;
+    }
+
 }
