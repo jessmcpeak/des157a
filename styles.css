@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     font-family: sans-serif;
 }
 
@@ -8,14 +9,15 @@ body {
 }
 
 #record-disc {
-    position: absolute;
+    position: fixed;
+    z-index: -1;
     top: 0;
     left: 0;
+    bottom: 0;
     right: 0;
     margin: auto;
-    z-index: -1;
     aspect-ratio: 1 / 1;
-    width: 50vw;
+    width: 80vw;
     border-radius: 1000px;
     border: 1vw solid white;
     background-color: black;
@@ -61,13 +63,14 @@ body {
 }
 
 @keyframes disc-spin {
-    0% {transform: perspective(1000px) rotateX(80deg) rotateZ(0deg);}
-    100% {transform: perspective(1000px) rotateX(80deg) rotateZ(360deg);}
+    0% {transform: perspective(1000px) rotateX(60deg) rotateZ(0deg);}
+    100% {transform: perspective(1000px) rotateX(60deg) rotateZ(360deg);}
 }
 
 h1, h2, p, ul {
     margin: 0;
     padding: 0;
+    text-shadow: 2px 2px black;
 }
 
 h1, h2 {
@@ -76,9 +79,7 @@ h1, h2 {
 }
 
 main {
-}
-
-main section {
+    background-color: hsla(0, 0%, 0%, 0.6);
 }
 
 h2 {
@@ -89,47 +90,6 @@ main section ul {
     list-style-type: none;
 }
 
-main section ul li {
-    position: relative;
-}
-
-.image-normal {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("images/kibby.jpg");
-    background-color: dimgray;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0;
-    transition: 0.5s ease-in-out;
-}
-
-.image-normal:hover {
-    opacity: 100%;
-}
-
-.image-difference {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("images/kibby.jpg");
-    background-color: dimgray;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: difference;
-    opacity: 100%;
-    transition: 0.5s ease-in-out;
-}
-
-.image-difference:hover {
-    opacity: 0;
-}
-
 main section ul li a {
     display: block;
     padding: 2em 1em;
@@ -137,8 +97,6 @@ main section ul li a {
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    text-shadow: 2px 2px black;
-
     color: white;
 }
 
