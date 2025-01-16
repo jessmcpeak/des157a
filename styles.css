@@ -143,13 +143,13 @@ footer p a {
     main section ul li a {
         padding: 2em 2em;
         text-align: right;
-        transition: all 0.2s ease-in-out;
+        transition: all 0.25s ease-in-out;
     }
 
     main section ul li a:hover {
-        text-shadow: -2px 2px chartreuse;
-        background-color: white;
-        color: black;
+        text-shadow: -2px 3px black;
+        transform: translateY(-2px);
+        color: chartreuse;
     }
 
     footer {
