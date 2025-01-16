@@ -8,18 +8,22 @@ body {
     color: white;
 }
 
+header, main section, footer {
+    background-color: hsla(0, 0%, 0%, 0.6);
+}
+
 #record-disc {
     position: fixed;
     z-index: -1;
-    top: 0;
+    top: -200px;
     left: 0;
     bottom: 0;
     right: 0;
     margin: auto;
     aspect-ratio: 1 / 1;
-    width: 80vw;
+    width: 75vw;
     border-radius: 1000px;
-    border: 1vw solid white;
+    border: 3px solid white;
     background-color: black;
     animation: disc-spin 5s linear 0s infinite forwards;
 }
@@ -33,7 +37,6 @@ body {
     right: 0;
     transform: rotate(180deg);
     font-size: 5vw;
-    text-align: center;
 }
 
 #disc-label {
@@ -57,7 +60,7 @@ body {
     bottom: 0;
     right: 0;
     aspect-ratio: 1 / 1;
-    width: 25%;
+    width: 20%;
     border-radius: 1000px;
     background-color: black;
 }
@@ -70,20 +73,27 @@ body {
 h1, h2, p, ul {
     margin: 0;
     padding: 0;
-    text-shadow: 2px 2px black;
 }
 
-h1, h2 {
-    padding: 1em;
+h1, h2, p, a {
     text-align: center;
 }
 
-main {
-    background-color: hsla(0, 0%, 0%, 0.6);
+p, a {
+    text-shadow: -2px 2px black;
 }
 
-h2 {
-    margin-top: 1em;
+a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    padding: 2em 1em 1em 1em;
+    text-shadow: -1px 1px chartreuse;
+}
+
+main section {
+    margin-bottom: 3em;
 }
 
 main section ul {
@@ -94,9 +104,7 @@ main section ul li a {
     display: block;
     padding: 2em 1em;
     font-weight: bold;
-    text-decoration: none;
     text-transform: uppercase;
-    text-align: center;
     color: white;
 }
 
@@ -104,21 +112,19 @@ footer {
     padding: 2em 1em;
 }
 
-footer p {
-    text-align: center;
-}
-
 footer p a {
-    text-decoration: none;
     color: chartreuse;
 }
 
-@media screen and (min-width: 810px) {
-    body {
+@media screen and (min-width: 800px) {
+
+    #content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 100vw;
+        max-width: 1200px;
+        height: 750px;
+        margin: 40px auto auto auto;
     }
 
     main {
@@ -127,20 +133,32 @@ footer p a {
 
     main section {
         flex: 1;
+        margin: 0;
     }
 
-    main section ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    main section ul li {
-        flex: 1;
+    h1, h2 {
+        text-align: left;
     }
 
     main section ul li a {
-        padding: auto 1em 1em 1em;
-        text-align: end;
+        padding: 2em 2em;
+        text-align: right;
+        transition: all 0.2s ease-in-out;
     }
 
+    main section ul li a:hover {
+        text-shadow: -2px 2px chartreuse;
+        background-color: white;
+        color: black;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+
+    footer p a:hover {
+        text-shadow: none;
+        text-decoration: underline;
+    }
 }
