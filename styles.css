@@ -9,26 +9,38 @@ body {
 
 #record-disc {
     position: absolute;
-    top: -100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+    aspect-ratio: 1 / 1;
+    width: 50vw;
+    border-radius: 1000px;
+    border: 1vw solid white;
+    background-color: black;
+    animation: disc-spin 5s linear 0s infinite forwards;
+}
+
+#record-disc p {
+    position: absolute;
+    top: 15%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    aspect-ratio: 1 / 1;
-    width: 200px;
-    border-radius: 1000px;
-    border: 10px solid white;
-    background-color: black;
-    animation: disc-spin 10s linear 0s infinite forwards;
-}
-
-#record-dic p {
-    position: absolute;
+    transform: rotate(180deg);
+    font-size: 5vw;
+    text-align: center;
 }
 
 #disc-label {
     position: absolute;
     margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     aspect-ratio: 1 / 1;
     width: 33%;
     border-radius: 1000px;
@@ -37,6 +49,15 @@ body {
 
 #disc-hole {
     position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    aspect-ratio: 1 / 1;
+    width: 25%;
+    border-radius: 1000px;
+    background-color: black;
 }
 
 @keyframes disc-spin {
@@ -69,6 +90,44 @@ main section ul {
 }
 
 main section ul li {
+    position: relative;
+}
+
+.image-normal {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/kibby.jpg");
+    background-color: dimgray;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.image-normal:hover {
+    opacity: 100%;
+}
+
+.image-difference {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/kibby.jpg");
+    background-color: dimgray;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: difference;
+    opacity: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.image-difference:hover {
+    opacity: 0;
 }
 
 main section ul li a {
@@ -79,17 +138,12 @@ main section ul li a {
     text-transform: uppercase;
     text-align: center;
     text-shadow: 2px 2px black;
-    background-image: url("images/kibby.jpg");
-    background-color: dimgray;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: difference;
+
     color: white;
 }
 
 footer {
-    padding: 2em 1em 1em 1em;
+    padding: 2em 1em;
 }
 
 footer p {
@@ -102,6 +156,13 @@ footer p a {
 }
 
 @media screen and (min-width: 810px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vw;
+    }
+
     main {
         display: flex;
     }
@@ -122,10 +183,6 @@ footer p a {
     main section ul li a {
         padding: auto 1em 1em 1em;
         text-align: end;
-    }
-
-    main section ul li a:hover {
-        background-blend-mode: normal;
     }
 
 }
