@@ -3,11 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            gap: 30px;
+            padding-top: 40px;
+        }
+
+        #canvas {
+            position: static;
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            border-radius: 0;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            aspect-ratio: 1 / 1;
+            border-radius: 50%;
+            background-color: black;
+        }
+    </style>
     <title>JS Experiment 2</title>
 </head>
 
 <body>
-    <h1>JavaScript Experiment 2</h1>
+    <header>
+        <h1>JavaScript<br>Experiment 2</h1>
+
+        <form>
+            <label for="canvas-width">Canvas Width (px)</label>
+            <br>
+            <input id="canvas-width" type="number" value="500">
     
+            <br>
+            <br>
+    
+            <label for="canvas-height">Canvas Height (px)</label>
+            <br>
+            <input id="canvas-height" type="number" value="500">
+    
+            <br>
+            <br>
+    
+            <label for="canvas-color">Canvas Color</label>
+            <br>
+            <input id="canvas-color" type="color" value="#ffffff">
+                
+            <br>
+            <br>
+
+            <input type="submit" value="Update Canvas">
+    
+            <br>
+            <br>
+    
+            <label for="brush-diameter">Brush Diameter (px)</label>
+            <br>
+            <input id="brush-diameter" type="number" value="10">
+    
+            <br>
+            <br>
+    
+            <label for="brush-color">Brush Color</label>
+            <br>
+            <input id="brush-color" type="color" value="#000000">
+        </form>
+
+        <p>Refresh page to clear canvas</p>
+    </header>
+
+    <div id="canvas">
+    </div>
+    
+    <script>
+
+        // on submit, update canvas with form settings
+        document.querySelector(`form`).addEventListener(`submit`, function(event){
+            event.preventDefault();
+
+            document.querySelector(`#canvas`).style.width = `${document.querySelector(`#canvas-width`).value}px`;
+            document.querySelector(`#canvas`).style.height = `${document.querySelector(`#canvas-height`).value}px`;
+            document.querySelector(`#canvas`).style.backgroundColor = `${document.querySelector(`#canvas-color`).value}`;
+        });
+
+        // on click, draw a point on the canvas with form settings
+        document.querySelector(`#canvas`).addEventListener(`click`, function(event){
+            // create div
+            document.querySelector(`#canvas`).appendChild(document.createElement(`div`));
+            // position
+            document.querySelector(`#canvas`).lastChild.style.top = `${event.clientY - (document.querySelector(`#brush-diameter`).value / 2)}px`;
+            document.querySelector(`#canvas`).lastChild.style.left = `${event.clientX - (document.querySelector(`#brush-diameter`).value / 2)}px`;
+            // size
+            document.querySelector(`#canvas`).lastChild.style.width = `${document.querySelector(`#brush-diameter`).value}px`;
+            // color
+            document.querySelector(`#canvas`).lastChild.style.backgroundColor = `${document.querySelector(`#brush-color`).value}`;
+        });
+    </script>
 </body>
 </html>
