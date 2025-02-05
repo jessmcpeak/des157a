@@ -1,3 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat";
+    color: #202020;
+}
+
+h1, h1 b, #sitePageForm header .firstQuote {
+    font-size: 48px;
+}
+
+h1, h1 b, #sitePageForm header .firstQuote, button, label {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 900;
+    letter-spacing: 0.05em;
+}
+
+h2, h3, h3 b, #sitePageResults article .firstQuote {
+    font-size: 40px;
+}
+
+h3, h3 b, #sitePageResults article .firstQuote {
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+p, p b, label {
+    font-size: 16px;
+}
+
+p, input, .hint {
+    font-weight: 400;
+}
+
+p, p b {
+    line-height: 150%;
+}
+
+p b {
+    font-weight: 600;
+}
+
+button, input, .hint {
+    font-size: 14px;
+}
+
+button, input {
+    letter-spacing: 0.1em;
+}
+
+input {
+    text-transform: uppercase;
+}
+
+/*
 .displayNone {
     display: none;
 }
+*/
+
+@media screen and (min-width: 800px) {}

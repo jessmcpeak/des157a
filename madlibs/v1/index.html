@@ -6,97 +6,117 @@
     <meta id="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- normalise css -->
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
     <!-- google fonts -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- my styles -->
     <link href="styles.css" rel="stylesheet">
 
     <!-- javascript -->
-    <script src="script.js" defer></script> 
+    <script src="script.js" defer></script>
 
     <!-- title -->
     <title>Madlibs V1</title>
 </head>
+
 <body>
-    <header>
-        <p id="firstQuote">"</p>
-        <h1>MAKE COUNTRY<br>MAD AGAIN"</h1>
-        <p>FASCIST ORANGE, the absolute worst living person you know, who somehow got re-elected to a major political office</p>
+    <div id="sitePageForm">
+        <header>
+            <p class="firstQuote">"</p>
+            <h1>MAKE <b>COUNTRY</b><br>MAD AGAIN"</h1>
+            <p>FASCIST ORANGE, the absolute worst living person you know, who somehow got re-elected to a major political office</p>
+            <img alt="An orange" src="images/orange-transparent.png">
+        </header>
+    
+        <main>
+            <h2>WHAT WILL HE SAY NEXT?</h2>
+            <form>
+                <div id="formPage1" class="formPage">
+                    <label for="q1">Plural Nationality</label>
+                    <input id="q1" type="text">
+                    <p class="hint displayNone">Example: Americans</p>
+    
+                    <label for="q2">Superlative</label>
+                    <input id="q2" type="text">
+                    <p class="hint displayNone">Example: greatest</p>
+    
+                    <label for="q3">Positive Number</label>
+                    <input id="q3" type="text">
+                    <p class="hint displayNone">Example: six thousand</p>
+    
+                    <label for="q4">Negative Adjective</label>
+                    <input id="q4" type="text">
+                    <p class="hint displayNone">Example: gross</p>
+    
+                    <button class="continue">CONTINUE</button>
+                </div>
+    
+                <div id="formPage2" class="formPage displayNone">
+                    <label for="q5">Noun</label>
+                    <input id="q5" type="text">
+                    <p class="hint displayNone">Example: scissors</p>
+    
+                    <label for="q6">Direction</label>
+                    <input id="q6" type="text">
+                    <p class="hint displayNone">Example: right</p>
+    
+                    <label for="q7">Very Normal Person</label>
+                    <input id="q7" type="text">
+                    <p class="hint displayNone">Example: your next door neighbor</p>
+    
+                    <label for="q8">Deity</label>
+                    <input id="q8" type="text">
+                    <p class="hint displayNone">Example: Zeus</p>
+    
+                    <section class="buttons">
+                        <button class="continue">CONTINUE</button>
+                        <button class="goBack">GO BACK</button>
+                    </section>
+                </div>
+    
+                <div id="formPage3" class="formPage displayNone">
+                    <label for="q9">Age Group</label>
+                    <input id="q9" type="text">
+                    <p class="hint displayNone">Example: tweens</p>
+    
+                    <label for="q10">Positive Number</label>
+                    <input id="q10" type="text">
+                    <p class="hint displayNone">Example: forty-five</p>
+    
+                    <label for="q11">Country #1 is from</label>
+                    <input id="q11" type="text">
+                    <p class="hint displayNone">Example: America</p>
+    
+                    <label for="q12">Positive Adjective</label>
+                    <input id="q12" type="text">
+                    <p class="hint displayNone">Example: efficient</p>
+    
+                    <section class="buttons">
+                        <button class="continue">CONTINUE</button>
+                        <button class="goBack">GO BACK</button>
+                    </section>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <div id="sitePageResults" class="displayNone">
+        <article>
+            <p class="firstQuote">"</p>
+            <h3>My Fellow <b>[PLURAL NATIONALITY]</b>...</h3>
+
+            <p>This nation used to be the <b>[SUPERLATIVE]</b> nation on Earth. But in these past <b>[NUMBER]</b> years, the previous administration has done a <b>[NEGATIVE ADJECTIVE]</b> job handling the <b>[NOUN]</b> situation, and they've allowed for far-<b>[DIRECTION]</b> radicals like <b>[VERY NORMAL PERSON]</b> to shape the country. Well, not anymore.</p>
+            <p>With my new administration, we will see a return to laws based on real values, the values that <b>[DEITY]</b> teaches us in <b>[BOOK]</b>. We are going to do something about the <b>[HISTORICALLY MARGINALIZED GROUP]</b> who are taking our <b>[PLURAL NOUN]</b>. We are going to protect our nation's <b>[HISTORICALLY PRIVILEGED GROUP]</b>. And finally, we are going to make sure our <b>[AGE GROUP]</b> learn that there are only <b>[NUMBER]</b> genders!</p>
+            <p>We are going to make <b>[COUNTRY #1 IS FROM]</b> <b>[POSITIVE ADJECTIVE]</b> again!</p>
+
+            <button>PLAY AGAIN</button>
+        </article>
+
         <img alt="An orange" src="images/orange-transparent.png">
-    </header>
-
-    <main>
-        <h2>WHAT WILL HE SAY NEXT?</h2>
-        <form>
-            <div id="page1" class="formPage">
-                <label for="q1">Plural Nationality</label>
-                <input id="q1" type="text">
-                <p class="displayNone">Example: Americans</p>
-
-                <label for="q2">Superlative</label>
-                <input id="q2" type="text">
-                <p class="displayNone">Example: Greatest</p>
-
-                <label for="q3">Positive Number</label>
-                <input id="q3" type="text">
-                <p class="displayNone">Example: Greatest</p>
-
-                <label for="q4">Negative Adjective</label>
-                <input id="q4" type="text">
-                <p class="displayNone">Example: Greatest</p>
-
-                <button class="continue">Continue</button>
-            </div>
-
-            <div id="page2" class="formPage displayNone">
-                <label for="q5">Noun</label>
-                <input id="q5" type="text">
-                <p class="displayNone">Example: Americans</p>
-
-                <label for="q6">Superlative</label>
-                <input id="q6" type="text">
-                <p class="displayNone">Example: Americans</p>
-
-                <label for="q7">Positive Number</label>
-                <input id="q7" type="text">
-                <p class="displayNone">Example: Greatest</p>
-
-                <label for="q8">Negative Adjective</label>
-                <input id="q8" type="text">
-                <p class="displayNone">Example: Greatest</p>
-
-                <section class="buttons">
-                    <button class="continue">Continue</button>
-                    <button class="goBack">Go Back</button>
-                </section>
-            </div>
-
-            <div id="page3" class="formPage displayNone">
-                <label for="q9">Noun</label>
-                <input id="q9" type="text">
-                <p class="displayNone">Example: Greatest</p>
-
-                <label for="q10">Superlative</label>
-                <input id="q10" type="text">
-                <p class="displayNone">Example: Greatest</p>
-
-                <label for="q11">Positive Number</label>
-                <input id="q11" type="text">
-                <p class="displayNone">Example: Greatest</p>
-
-                <label for="q12">Negative Adjective</label>
-                <input id="q12" type="text">
-                <p class="displayNone">Example: Greatest</p>
-
-                <section class="buttons">
-                    <button class="continue">Continue</button>
-                    <button class="goBack">Go Back</button>
-                </section>
-            </div>
-        </form>
-    </main>
+    </div>
 </body>
 </html>
