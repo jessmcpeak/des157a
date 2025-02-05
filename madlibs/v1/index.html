@@ -1,35 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- meta -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- normalise css -->
+
+
+    <!-- google fonts -->
+
+
+    <!-- my styles -->
     <link href="styles.css" rel="stylesheet">
+
+    <!-- javascript -->
     <script src="script.js" defer></script> 
+
+    <!-- title -->
     <title>Madlibs V1</title>
 </head>
 <body>
     <header>
-        <h1>"MAKE COUNTRY MAD AGAIN"</h1>
+        <p id="firstQuote">"</p>
+        <h1>MAKE COUNTRY<br>MAD AGAIN"</h1>
         <p>FASCIST ORANGE, the absolute worst living person you know, who somehow got re-elected to a major political office</p>
+        <img alt="An orange" src="images/orange-transparent.png">
     </header>
 
     <main>
         <h2>WHAT WILL HE SAY NEXT?</h2>
         <form>
-            <div id="page1">
+            <div id="page1" class="formPage">
                 <label for="q1">Plural Nationality</label>
-                <input name="q1" type="text">
-                <p>Example: Americans</p>
+                <input id="q1" type="text">
+                <p class="displayNone">Example: Americans</p>
 
                 <label for="q2">Superlative</label>
-                <input name="q2" type="text">
-                <p>Example: Greatest</p>
+                <input id="q2" type="text">
+                <p class="displayNone">Example: Greatest</p>
 
                 <label for="q3">Positive Number</label>
-                <input name="q3" type="text">
+                <input id="q3" type="text">
+                <p class="displayNone">Example: Greatest</p>
 
-                <label for="q3">Negative Adjective</label>
-                <input name="q3" type="text">
+                <label for="q4">Negative Adjective</label>
+                <input id="q4" type="text">
+                <p class="displayNone">Example: Greatest</p>
+
+                <button class="continue">Continue</button>
+            </div>
+
+            <div id="page2" class="formPage displayNone">
+                <label for="q5">Noun</label>
+                <input id="q5" type="text">
+                <p class="displayNone">Example: Americans</p>
+
+                <label for="q6">Superlative</label>
+                <input id="q6" type="text">
+                <p class="displayNone">Example: Americans</p>
+
+                <label for="q7">Positive Number</label>
+                <input id="q7" type="text">
+                <p class="displayNone">Example: Greatest</p>
+
+                <label for="q8">Negative Adjective</label>
+                <input id="q8" type="text">
+                <p class="displayNone">Example: Greatest</p>
+
+                <section class="buttons">
+                    <button class="continue">Continue</button>
+                    <button class="goBack">Go Back</button>
+                </section>
+            </div>
+
+            <div id="page3" class="formPage displayNone">
+                <label for="q9">Noun</label>
+                <input id="q9" type="text">
+                <p class="displayNone">Example: Greatest</p>
+
+                <label for="q10">Superlative</label>
+                <input id="q10" type="text">
+                <p class="displayNone">Example: Greatest</p>
+
+                <label for="q11">Positive Number</label>
+                <input id="q11" type="text">
+                <p class="displayNone">Example: Greatest</p>
+
+                <label for="q12">Negative Adjective</label>
+                <input id="q12" type="text">
+                <p class="displayNone">Example: Greatest</p>
+
+                <section class="buttons">
+                    <button class="continue">Continue</button>
+                    <button class="goBack">Go Back</button>
+                </section>
             </div>
         </form>
     </main>
