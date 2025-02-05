@@ -4,7 +4,15 @@
 
 body {
     font-family: "Montserrat";
-    color: #202020;
+    color: #fff;
+    background-color: #202020;
+}
+
+
+/* TYPOGRAPHY */
+
+h1, h1 b, #sitePageForm header .firstQuote, h2, h3, h3 b, #sitePageResults article .firstQuote, button, input, label, .hint {
+    line-height: 100%;
 }
 
 h1, h1 b, #sitePageForm header .firstQuote {
@@ -63,4 +71,53 @@ input {
 }
 */
 
-@media screen and (min-width: 800px) {}
+
+/* MOBILE LAYOUT */
+
+#sitePageForm header {
+    display: grid;
+    margin-top: 5em;
+}
+
+#sitePageForm header .firstQuote {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 0;
+}
+
+#sitePageForm header h1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 0;
+}
+
+#sitePageForm header #blurb {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 0;
+}
+
+#sitePageForm header img {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    place-self: center;
+    margin: 0;
+}
+
+
+/* DESKTOP LAYOUT */
+
+@media screen and (min-width: 800px) {
+    #sitePageForm, #sitePageResults {
+        width: 1200px;
+        height: 750px;
+    }
+}
