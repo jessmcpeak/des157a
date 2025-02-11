@@ -1,13 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- normalise css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- my styles -->
     <link href="styles.css" rel="stylesheet">
-    <script src="script.js" defer></script> 
+
+    <!-- javascript -->
+    <script src="script.js" defer></script>
+
+    <!-- title -->
     <title>Madlibs V2 Final</title>
 </head>
+
 <body>
+    <div id="sitePageForm">
+        <header>
+            <h1>"MAKE <b>COUNTRY</b> MAD AGAIN"</h1>
+            <p id="blurb">FASCIST ORANGE, the absolute worst living person you know, who somehow got re-elected to a major political office</p>
+            <img alt="An orange" src="images/orange-transparent.png">
+        </header>
     
+        <main>
+            <h2>WHAT WILL HE SAY NEXT?</h2>
+            <form>
+                <div id="formPage1" class="formPage">
+                    <label for="q1">Plural Nationality</label>
+                    <input id="q1" type="text">
+                    <p id="hint1" class="hint hidden">Example: Americans</p>
+    
+                    <label for="q2">Superlative</label>
+                    <input id="q2" type="text">
+                    <p id="hint2" class="hint hidden">Example: greatest</p>
+    
+                    <label for="q3">Positive Number</label>
+                    <input id="q3" type="text">
+                    <p id="hint3" class="hint hidden">Example: six thousand</p>
+    
+                    <label for="q4">Negative Adjective</label>
+                    <input id="q4" type="text">
+                    <p id="hint4" class="hint hidden">Example: gross</p>
+    
+                    <button class="continue">CONTINUE</button>
+                </div>
+    
+                <div id="formPage2" class="formPage displayNone">
+                    <label for="q5">Noun</label>
+                    <input id="q5" type="text">
+                    <p id="hint5" class="hint hidden">Example: scissors</p>
+    
+                    <label for="q6">Direction</label>
+                    <input id="q6" type="text">
+                    <p id="hint6" class="hint hidden">Example: right</p>
+    
+                    <label for="q7">Very Normal Person</label>
+                    <input id="q7" type="text">
+                    <p id="hint7" class="hint hidden">Example: your next door neighbor</p>
+    
+                    <label for="q8">Deity</label>
+                    <input id="q8" type="text">
+                    <p id="hint8" class="hint hidden">Example: Zeus</p>
+    
+                    <div class="buttons">
+                        <button class="continue">CONTINUE</button>
+                        <button class="goBack">GO BACK</button>
+                    </div>
+                </div>
+
+                <div id="formPage3" class="formPage displayNone">
+                    <label for="q9">Book</label>
+                    <input id="q9" type="text">
+                    <p id="hint9" class="hint hidden">Example: Pride & Prejudice</p>
+    
+                    <label for="q10">Historically Marginalized Group</label>
+                    <input id="q10" type="text">
+                    <p id="hint10" class="hint hidden">Example: Native Americans</p>
+    
+                    <label for="q11">Plural Noun</label>
+                    <input id="q11" type="text">
+                    <p id="hint11" class="hint hidden">Example: bees</p>
+    
+                    <label for="q12">Historically Priveleged Group</label>
+                    <input id="q12" type="text">
+                    <p id="hint12" class="hint hidden">Example: English people</p>
+    
+                    <div class="buttons">
+                        <button class="continue">CONTINUE</button>
+                        <button class="goBack">GO BACK</button>
+                    </div>
+                </div>
+    
+                <div id="formPage4" class="formPage displayNone">
+                    <label for="q13">Age Group</label>
+                    <input id="q13" type="text">
+                    <p id="hint13" class="hint hidden">Example: tweens</p>
+    
+                    <label for="q14">Positive Number</label>
+                    <input id="q14" type="text">
+                    <p id="hint14" class="hint hidden">Example: forty-five</p>
+    
+                    <label for="q15">Country #1 is from</label>
+                    <input id="q15" type="text">
+                    <p id="hint15" class="hint hidden">Example: America</p>
+
+                    <label for="q16">Positive Adjective</label>
+                    <input id="q16" type="text">
+                    <p id="hint16" class="hint hidden">Example: efficient</p>
+    
+                    <div class="buttons">
+                        <input type="submit" class="continue" value="READ SPEECH">
+                        <button class="goBack">GO BACK</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <div id="sitePageResults" class="displayNone">
+        <img alt="An orange" src="images/orange-transparent.png">
+
+        <article>
+            <div id="madlib">
+                <h3>"My Fellow <b>[PLURAL NATIONALITY]</b>...</h3>
+
+                <p>This nation used to be the <b>[SUPERLATIVE]</b> nation on Earth. But in these past <b>[NUMBER]</b> years, the previous administration has done a <b>[NEGATIVE ADJECTIVE]</b> job handling the <b>[NOUN]</b> situation, and they've allowed for far-<b>[DIRECTION]</b> radicals like <b>[VERY NORMAL PERSON]</b> to shape the country. Well, not anymore.</p>
+                <p>With my new administration, we will see a return to laws based on real values, the values that <b>[DEITY]</b> teaches us in <b>[BOOK]</b>. We are going to do something about the <b>[HISTORICALLY MARGINALIZED GROUP]</b> who are taking our <b>[PLURAL NOUN]</b>. We are going to protect our nation's <b>[HISTORICALLY PRIVILEGED GROUP]</b>. And finally, we are going to make sure our <b>[AGE GROUP]</b> learn that there are only <b>[NUMBER]</b> genders!</p>
+                <p>We are going to make <b>[COUNTRY #1 IS FROM]</b> <b>[POSITIVE ADJECTIVE]</b> again!"</p>
+            </div>
+
+            <button class="continue">PLAY AGAIN</button>
+        </article>
+    </div>
 </body>
 </html>
