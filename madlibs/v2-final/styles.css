@@ -62,10 +62,6 @@ button, input {
     letter-spacing: 0.1em;
 }
 
-input {
-    text-transform: uppercase;
-}
-
 
 /* COLORS */
 
@@ -281,19 +277,31 @@ article p {
     body > div:last-child {
         position: absolute;
         top: 0;
-        left: auto;
+        right: 0;
+        left: 0;
+        margin: 0 auto 0 auto;
         flex-direction: row-reverse;
         background-color: #202020;
     }
 
     #sitePageResults {
+        height: 100vh;
         margin: 0 auto 0 auto;
+        transition: all 1s;
     }
 
     #sitePageResults article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         flex: 1;
         margin-top: 0;
         padding: 3em;
+    }
+
+    #sitePageResults div[class="buttons"] {
+        display: flex;
+        justify-content: end;
     }
 
     img {
