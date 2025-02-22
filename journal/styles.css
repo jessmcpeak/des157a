@@ -89,3 +89,12 @@ footer {
     padding: 1em 1em 2em 1em;
     text-align: center;
 }
+
+.multi-image {
+    display: flex;
+    gap: 1em;
+}
+
+.multi-image img {
+    flex: 1;
+}
