@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/paper-background.jpg);
+    background-blend-mode: luminosity;
+    backdrop-filter: brightness(130%) blur(5px);
+    background-color: floralwhite;
+    color: #111;
+}
+
+h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+header, main, footer {
+    margin: 0 1em;
+    max-width: 680px;
+}
+
+header {
+    margin: 3em 1em;
+}
+
+h1 {
+    font-family: "Special Elite";
+    font-size: 51px;
+    text-align: center;
+    line-height: 90%;
+}
+
+/* main {
+    display: flex;
+    flex-direction: column-reverse;
+} */
+
+.article-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+}
+
+h2, h3, time {
+    font-family: "Source Code Pro";
+    font-weight: 500;
+}
+
+h2, time {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p, a {
+    font-family: "Source Serif 4";
+    font-size: 20px;
+    font-weight: 375;
+    line-height: 160%;
+}
+
+a {
+    color: #111;
+}
+
+article p {
+    margin: 1em 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 2em;
+    border: 1px solid black;
+}
+
+footer {
+    padding: 1em 1em 2em 1em;
+    text-align: center;
+}
