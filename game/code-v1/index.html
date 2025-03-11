@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- normalize css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- stylesheet -->
+    <link href="styles.css" rel="stylesheet">
+
+    <title>Game On! Code V1</title>
+</head>
+
+<body>
+    <div id="select" class="screen">
+        <div id="logo">
+            <img id="logo-heart" alt="a cartoon heart on its side" src="">
+            <h1>Tweet<br>Hearts</h1>
+        </div>
+        <h2>Choose your lovebirds</h2>
+
+        <form id="bird-selection">
+            <div id="bird-options">
+                <input type="radio" id="greater-lophornia" name="bird-selector" value="Greater Lophornia">
+                <label for="greater-lophornia">Greater Lophornia</label>
+                <input type="radio" id="other-bird-1" name="bird-selector" value="other-bird-1">
+                <label for="other-bird-1">Other Bird 1</label>
+                <input type="radio" id="other-bird-2" name="bird-selector" value="other-bird-2">
+                <label for="other-bird-2">Other Bird 2</label>
+                <input type="radio" id="other-bird-3" name="bird-selector" value="other-bird-3">
+                <label for="other-bird-3">Other Bird 3</label>
+            </div>
+
+            <input type="submit" value="Choose a Species">
+        </form>
+    </div>
+
+    <div id="game" class="screen display-none">
+        <div id="love-meter">
+            <div id="love-progress"></div>
+            <img id="heart-icon" alt="a heart icon" src="">
+        </div>
+
+        <div id="timer">
+            <div id="timer-progress"></div>
+            <img id="clock-icon" alt="a clock icon" src="">
+        </div>
+
+        <div id="play-field">
+            <img class="male" alt="a male bird" src="">
+            <img id="female" alt="a female bird" src="">
+        </div>
+
+        <div id="dialog-box">
+            <p></p>
+        </div>
+
+        <div id="actions">
+            <button id="dance">Dance</button>
+            <button id="sing">Sing</button>
+            <button id="bring-gift">Bring Gift</button>
+            <button id="make-nest">Make Nest</button>
+        </div>
+    </div>
+
+    <div id="lose" class="screen display-none">
+        <h2>It wasn't meant to be...</h2>
+
+        <div>
+            <img class="male" alt="a male bird" src="">
+            <img id="broken-heart" alt="a broken cartoon love heart" src="">
+        </div>
+
+        <div>
+            <button class="choose-another-bird">Choose Another Bird</button>
+            <button id="try-again">Try Again</button>
+        </div>
+    </div>
+
+    <div id="win" class="screen display-none">
+        <h2>Love wins!</h2>
+
+        <div>
+            <img class="male" alt="a male bird" src="">
+            <img id="heart" alt="a cartoon love heart" src="">
+            <img id="female" alt="a female bird" src="">
+        </div>
+
+        <div>
+            <button class="choose-another-bird">Choose Another Bird</button>
+            <button id="learn-more">Learn More</button>
+        </div>
+    </div>
+
+    <div id="info" class="screen display-none">
+        <div id="info-box">
+            <h2></h2>
+            <p></p>
+        </div>
+
+        <div id="bird-collage">
+            <img class="male" alt="a male bird" src="">
+            <img id="female" alt="a female bird" src="">
+
+            <button class="choose-another-bird">Choose Another Bird</button>
+        </div>
+    </div>
+</body>
+</html>
