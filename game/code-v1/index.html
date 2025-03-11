@@ -20,26 +20,34 @@
 
 <body>
     <div id="select" class="screen">
-        <div id="logo">
-            <img id="logo-heart" alt="a cartoon heart on its side" src="">
-            <h1>Tweet<br>Hearts</h1>
-        </div>
-        <h2>Choose your lovebirds</h2>
+        <header>
+            <img id="logo" alt="a cartoon heart on its side" src="../images/logo.png">
+            <h2>Choose your lovebirds</h2>
+        </header>
 
-        <form id="bird-selection">
-            <div id="bird-options">
-                <input type="radio" id="greater-lophornia" name="bird-selector" value="Greater Lophornia">
-                <label for="greater-lophornia">Greater Lophornia</label>
-                <input type="radio" id="other-bird-1" name="bird-selector" value="other-bird-1">
-                <label for="other-bird-1">Other Bird 1</label>
-                <input type="radio" id="other-bird-2" name="bird-selector" value="other-bird-2">
-                <label for="other-bird-2">Other Bird 2</label>
-                <input type="radio" id="other-bird-3" name="bird-selector" value="other-bird-3">
-                <label for="other-bird-3">Other Bird 3</label>
+        <div id="bird-options">
+            <div id="greater-lophorina-select" class="bird-select">
+                <img id="greater-lophornia-female" alt="Female Greater Lophorina" src="../images/greater-lophorina-female.png">
+                <img id="greater-lophornia-male" alt="Male Greater Lophorina" src="../images/greater-lophorina-male.png">
             </div>
 
-            <input type="submit" value="Choose a Species">
-        </form>
+            <div id="other-bird-1-select" class="bird-select">
+                <img id="other-bird-1-female" alt="Female Other Bird 1" src="">
+                <img id="other-bird-1-male" alt="Male Other Bird 1" src="">
+            </div>
+
+            <div id="other-bird-2-select" class="bird-select">
+                <img id="other-bird-2-female" alt="Female Other Bird 2" src="">
+                <img id="other-bird-2-male" alt="Male Other Bird 2" src="">
+            </div>
+
+            <div id="other-bird-3-select" class="bird-select">
+                <img id="other-bird-3-female" alt="Female Other Bird 3" src="">
+                <img id="other-bird-3-male" alt="Male Other Bird 3" src="">
+            </div>
+        </div>
+
+        <button id="choose-species">Choose a Species</button>
     </div>
 
     <div id="game" class="screen display-none">
