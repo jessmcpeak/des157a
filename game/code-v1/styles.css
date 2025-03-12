@@ -174,3 +174,24 @@ header {
 
 /* SELECT SCREEN END */
 
+/* GAME SCREEN START */
+.progress-bar {
+    width: auto;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 1000px;
+    border: 2px solid #e6e6e6;
+}
+
+#play-field {
+    display: flex;
+    justify-content: center;
+    align-self: stretch;
+}
+
+#bars {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* GAME SCREEN END */

@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <div id="select" class="screen">
+    <div id="select" class="screen display-none">
         <header>
             <img id="logo" alt="a cartoon heart on its side" src="../images/logo.png">
             <h2>Choose your lovebirds</h2>
@@ -50,20 +50,22 @@
         <button id="choose-species">Choose a Species</button>
     </div>
 
-    <div id="game" class="screen display-none">
-        <div id="love-meter">
-            <div id="love-progress"></div>
-            <img id="heart-icon" alt="a heart icon" src="">
-        </div>
-
-        <div id="timer">
-            <div id="timer-progress"></div>
-            <img id="clock-icon" alt="a clock icon" src="">
+    <div id="game" class="screen">
+        <div id="bars">
+            <div id="love-meter" class="progress-bar">
+                <div id="love-progress"></div>
+                <img id="heart-icon" alt="a heart icon" src="">
+            </div>
+    
+            <div id="timer" class="progress-bar">
+                <div id="timer-progress"></div>
+                <img id="clock-icon" alt="a clock icon" src="">
+            </div>
         </div>
 
         <div id="play-field">
-            <img class="male" alt="a male bird" src="">
-            <img id="female" alt="a female bird" src="">
+            <img class="male" alt="a male bird" src="../images/greater-lophorina-male.png">
+            <img id="female" alt="a female bird" src="../images/greater-lophorina-female.png">
         </div>
 
         <div id="dialog-box">
