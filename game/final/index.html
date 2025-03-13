@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- normalize css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- stylesheet -->
+    <link href="styles.css" rel="stylesheet">
+
+    <title>Game On! Final</title>
+</head>
+
+<body>
+    <div id="select" class="screen">
+        <header>
+            <img id="logo" alt="a cartoon heart on its side" src="../images/logo.png">
+            <h2>A game of flighted flirting!</h2>
+        </header>
+
+        <div id="bird-options">
+            <div id="greater-lophorina-select" class="bird-select">
+                <img id="greater-lophornia-female" class="female" alt="Female Greater Lophorina" src="../images/greater-lophorina-female.png">
+                <img id="greater-lophornia-male" class="male" alt="Male Greater Lophorina" src="../images/greater-lophorina-male.png">
+            </div>
+
+            <div id="other-bird-1-select" class="bird-select">
+                <img id="other-bird-1-female" class="female" alt="Female Other Bird 1" src="../images/greater-lophorina-female.png">
+                <img id="other-bird-1-male" class="male" alt="Male Other Bird 1" src="../images/greater-lophorina-male.png">
+            </div>
+
+            <div id="other-bird-2-select" class="bird-select">
+                <img id="other-bird-2-female" class="female" alt="Female Other Bird 2" src="../images/greater-lophorina-female.png">
+                <img id="other-bird-2-male" class="male" alt="Male Other Bird 2" src="../images/greater-lophorina-male.png">
+            </div>
+
+            <div id="other-bird-3-select" class="bird-select">
+                <img id="other-bird-3-female" class="female" alt="Female Other Bird 3" src="../images/greater-lophorina-female.png">
+                <img id="other-bird-3-male" class="male" alt="Male Other Bird 3" src="../images/greater-lophorina-male.png">
+            </div>
+        </div>
+
+        <button id="choose-species">Choose a Species</button>
+    </div>
+
+    <div id="game" class="screen hidden">
+        <div id="bars">
+            <div id="love-meter" class="meter-bar">
+                <div id="love-progress" class="progress-bar"></div>
+                <img id="heart-icon" class="bar-icon" alt="a heart icon" src="../images/heart-icon.png">
+            </div>
+    
+            <div id="timer" class="meter-bar">
+                <div id="timer-progress" class="progress-bar"></div>
+                <img id="clock-icon" class="bar-icon" alt="a clock icon" src="../images/clock-icon.png">
+            </div>
+        </div>
+
+        <div id="play-field">
+            <img class="male" alt="a male bird" src="../images/greater-lophorina-male.png">
+            <img class="female" alt="a female bird" src="../images/greater-lophorina-female.png">
+        </div>
+
+        <div id="dialog-and-actions">
+            <div id="dialog">
+                <p>A female appeared!</p>
+            </div>
+    
+            <div id="actions" class="button-choice">
+                <button id="dance">Dance</button>
+                <button id="sing">Sing</button>
+                <button id="bring-gift">Bring Gift</button>
+                <button id="make-nest">Make Nest</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="lose" class="screen hidden">
+        <h2>It wasn't meant to be...</h2>
+
+        <div class="illustration">
+            <img class="male" alt="a male bird" src="../images/greater-lophorina-male.png">
+            <img id="broken-heart" alt="a broken cartoon love heart" src="../images/broken-heart.png">
+        </div>
+
+        <div class="button-choice">
+            <button class="choose-another-bird">Choose Another Bird</button>
+            <button id="try-again">Try Again</button>
+        </div>
+    </div>
+
+    <div id="win" class="screen hidden">
+        <h2>Love wins!</h2>
+
+        <div class="illustration">
+            <img class="male" alt="a male bird" src="../images/greater-lophorina-male.png">
+            <img id="heart" alt="a cartoon love heart" src="../images/heart.png">
+            <img class="female" alt="a female bird" src="../images/greater-lophorina-female.png">
+        </div>
+
+        <div class="button-choice">
+            <button class="choose-another-bird">Choose Another Bird</button>
+            <button id="learn-more">Learn More</button>
+        </div>
+    </div>
+
+    <div id="info" class="screen hidden">
+        <div id="info-layout">
+            <div id="info-box">
+                <h2>About Greater Lophorina</h2>
+                <p>The Greater Lophorina lives in the rainforests of New Guinea. With far fewer females than males, competition is fierce, leading to an elaborate courtship display. Males clear a “dance floor,” call to attract a female, then transform—spreading their black cape and shimmering blue-green feathers into an oval shape while hopping and snapping their tail feathers. Females are picky, rejecting 15-20 suitors before choosing a mate. As a polygynous species, males mate with multiple females, spending hours each day perfecting their mesmerising performance.</p>
+            </div>
+    
+            <div id="bird-collage">
+                <img class="female" alt="a female bird" src="../images/greater-lophorina-female.png">
+                <img class="male" alt="a male bird" src="../images/greater-lophorina-male.png">
+            </div>    
+        </div>
+
+        <button class="choose-another-bird">Choose Another Bird</button>
+    </div>
+</body>
+</html>

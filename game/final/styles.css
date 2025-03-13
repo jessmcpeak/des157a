@@ -1,0 +1,335 @@
+/* CSS RESET START */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS RESET END */
+
+/* SELECT SCREEN START */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(#99FFFF, #006600);
+    background-color: #006600; /* Used if the image is unavailable */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 750px;
+    padding: 40px 80px;
+    background-image: url("../images/background.jpg");
+    background-color: #006600; /* Used if the image is unavailable */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+#select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+#bird-options {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-self: stretch;
+    flex: 2;
+}
+
+.bird-select {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+    border-radius: 1000px 1000px 100px 100px;
+    border: 2px solid #e6e6e6;
+
+    background-image: linear-gradient(#ffffff, #ffffff00);
+
+    transition: all 0.2s ease-in-out;
+}
+
+.bird-select .female {
+    transform: translateY(30%);
+}
+
+.bird-select .male {
+    transform: translateY(-20%);
+}
+
+.bird-select:hover {
+    background-image: linear-gradient(#00CCCC, #00CCCC00);
+    border-color: #009999;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+button {
+    padding: 20px 40px;
+    border-radius: 10000px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #e6e6e6;
+    background-color: #ffffff;
+    color: #1a1a1a;
+
+    font-weight: 300;
+
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    border-color: #009999;
+    background-color: #00CCCC;
+    color: #ffffff;
+}
+
+#logo {
+    height: 80px;
+    transform: translateX(-10px);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* SELECT SCREEN END */
+
+/* GAME SCREEN START */
+#game {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.meter-bar {
+    position: relative;
+    width: auto;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 1000px;
+    border: 2px solid #e6e6e6;
+}
+
+.progress-bar {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    height: 40px;
+    width: 100px;
+    border-radius: 1000px;
+}
+
+#love-progress {
+    border: 2px solid #CC0066;
+    background-color: #FF0080;
+}
+
+#timer-progress {
+    border: 2px solid #CC6600;
+    background-color: #FF8000;
+}
+
+#play-field {
+    display: flex;
+    justify-content: space-around;
+    height: 320px;
+}
+
+#bars {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-choice {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+#actions button {
+    flex: 1;
+}
+
+.bar-icon {
+    position: relative;
+    z-index: 1;
+    top: 7px;
+    left: 14px;
+}
+
+#play-field img {
+    width: auto;
+    max-height: 100%;
+}
+
+#dialog-and-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#dialog, #info-box {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 2px solid #e6e6e6;
+}
+/* GAME SCREEN END */
+
+/* LOSE AND WIN SCREEN START */
+#lose, #win {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 375px;
+}
+
+.illustration .male, .illustration .female {
+    width: auto;
+    max-height: 100%;
+}
+/* LOSE AND WIN SCREEN END */
+
+/* INFO SCREEN START */
+#info {
+    padding-top: 80px;
+}
+
+#info-layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+#info-box {
+    flex: 1;
+}
+
+#info-box h2 {
+    margin-bottom: 20px;
+}
+
+#info-box p {
+    line-height: 150%;
+}
+
+#bird-collage {
+    flex: 1;
+}
+
+#bird-collage .female {
+    transform: translateY(10%);
+}
+
+#bird-collage .male {
+    transform: translateY(-40%);
+}
+
+#info button {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* INFO SCREEN END */
