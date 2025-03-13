@@ -98,8 +98,8 @@ img {
     background-size: cover;
 }
 
-.display-none {
-    display: none;
+.hidden {
+    visibility: hidden;
 }
 
 #select {
@@ -225,7 +225,7 @@ header {
     gap: 10px;
 }
 
-#actions {
+.button-choice {
     display: flex;
     gap: 10px;
     justify-content: space-between;
@@ -260,3 +260,28 @@ header {
     border: 2px solid #e6e6e6;
 }
 /* GAME SCREEN END */
+
+/* LOSE SCREEN START */
+#lose {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+}
+
+#lonely-bird {
+    display: flex;
+    align-items: center;
+    height: 375px;
+}
+
+#lonely-bird .male {
+    width: auto;
+    max-height: 100%;
+}
+/* LOSE SCREEN END */
+
+/* WIN SCREEN START */
+
+/* WIN SCREEN END */

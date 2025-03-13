@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <div id="select" class="screen display-none">
+    <div id="select" class="screen hidden">
         <header>
             <img id="logo" alt="a cartoon heart on its side" src="../images/logo.png">
             <h2>Choose your lovebirds</h2>
@@ -50,7 +50,7 @@
         <button id="choose-species">Choose a Species</button>
     </div>
 
-    <div id="game" class="screen">
+    <div id="game" class="screen hidden">
         <div id="bars">
             <div id="love-meter" class="meter-bar">
                 <div id="love-progress" class="progress-bar"></div>
@@ -73,7 +73,7 @@
                 <p>Placehorder text</p>
             </div>
     
-            <div id="actions">
+            <div id="actions" class="button-choice">
                 <button id="dance">Dance</button>
                 <button id="sing">Sing</button>
                 <button id="bring-gift">Bring Gift</button>
@@ -82,21 +82,21 @@
         </div>
     </div>
 
-    <div id="lose" class="screen display-none">
+    <div id="lose" class="screen">
         <h2>It wasn't meant to be...</h2>
 
-        <div>
-            <img class="male" alt="a male bird" src="">
-            <img id="broken-heart" alt="a broken cartoon love heart" src="">
+        <div id="lonely-bird">
+            <img class="male" alt="a male bird" src="../images/greater-lophorina-male.png">
+            <img id="broken-heart" alt="a broken cartoon love heart" src="../images/broken-heart.png">
         </div>
 
-        <div>
+        <div class="button-choice">
             <button class="choose-another-bird">Choose Another Bird</button>
             <button id="try-again">Try Again</button>
         </div>
     </div>
 
-    <div id="win" class="screen display-none">
+    <div id="win" class="screen hidden">
         <h2>Love wins!</h2>
 
         <div>
@@ -105,13 +105,13 @@
             <img id="female" alt="a female bird" src="">
         </div>
 
-        <div>
+        <div class="button-choice">
             <button class="choose-another-bird">Choose Another Bird</button>
             <button id="learn-more">Learn More</button>
         </div>
     </div>
 
-    <div id="info" class="screen display-none">
+    <div id="info" class="screen hidden">
         <div id="info-box">
             <h2></h2>
             <p></p>
