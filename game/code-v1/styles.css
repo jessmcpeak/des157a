@@ -261,8 +261,8 @@ header {
 }
 /* GAME SCREEN END */
 
-/* LOSE SCREEN START */
-#lose {
+/* LOSE AND WIN SCREEN START */
+#lose, #win {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -270,18 +270,18 @@ header {
     padding-top: 80px;
 }
 
-#lonely-bird {
+.illustration {
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 375px;
 }
 
-#lonely-bird .male {
+.illustration .male, .illustration .female {
     width: auto;
     max-height: 100%;
 }
-/* LOSE SCREEN END */
+/* LOSE AND WIN SCREEN END */
 
-/* WIN SCREEN START */
-
-/* WIN SCREEN END */
+/* INFO SCREEN START */
+/* INFO SCREEN END */
