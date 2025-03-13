@@ -131,7 +131,7 @@ img {
 
     background-image: linear-gradient(#ffffff, #ffffff00);
 
-    transition: all 0.2s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 
 .bird-select .female {
@@ -216,10 +216,10 @@ header {
 }
 
 #love-progress {
-    width: 5.5%;
+    width: calc(5% + 4px);
     border: 2px solid #CC0066;
     background-color: #FF0080;
-    transition: all 0.25s ease 0 normal;
+    transition: all 0.2s ease-in-out 0s normal;
 }
 
 #timer-progress {
@@ -229,7 +229,7 @@ header {
 }
 
 .timer-animation {
-    animation: timer-animation 10s linear 0 1 normal forwards;
+    animation: timer-animation 10s linear 0s 1 normal forwards;
 }
 
 @keyframes timer-animation {
