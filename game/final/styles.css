@@ -219,7 +219,7 @@ header {
     width: calc(5% + 4px);
     border: 2px solid #CC0066;
     background-color: #FF0080;
-    transition: all 0.2s ease-in-out 0s normal;
+    transition: all 0.2s ease-in-out 0s;
 }
 
 #timer-progress {
