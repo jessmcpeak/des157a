@@ -19,38 +19,38 @@
 </head>
 
 <body>
-    <div id="select" class="screen hidden">
+    <div id="select" class="screen">
         <header>
             <img id="logo" alt="a cartoon heart on its side" src="../images/logo.png">
-            <h2>Choose your lovebirds</h2>
+            <h2>A game of flighted flirting!</h2>
         </header>
 
         <div id="bird-options">
             <div id="greater-lophorina-select" class="bird-select">
-                <img id="greater-lophornia-female" alt="Female Greater Lophorina" src="../images/greater-lophorina-female.png">
-                <img id="greater-lophornia-male" alt="Male Greater Lophorina" src="../images/greater-lophorina-male.png">
+                <img id="greater-lophornia-female" class="female" alt="Female Greater Lophorina" src="../images/greater-lophorina-female.png">
+                <img id="greater-lophornia-male" class="male" alt="Male Greater Lophorina" src="../images/greater-lophorina-male.png">
             </div>
 
             <div id="other-bird-1-select" class="bird-select">
-                <img id="other-bird-1-female" alt="Female Other Bird 1" src="">
-                <img id="other-bird-1-male" alt="Male Other Bird 1" src="">
+                <img id="other-bird-1-female" class="female" alt="Female Other Bird 1" src="../images/greater-lophorina-female.png">
+                <img id="other-bird-1-male" class="male" alt="Male Other Bird 1" src="../images/greater-lophorina-male.png">
             </div>
 
             <div id="other-bird-2-select" class="bird-select">
-                <img id="other-bird-2-female" alt="Female Other Bird 2" src="">
-                <img id="other-bird-2-male" alt="Male Other Bird 2" src="">
+                <img id="other-bird-2-female" class="female" alt="Female Other Bird 2" src="../images/greater-lophorina-female.png">
+                <img id="other-bird-2-male" class="male" alt="Male Other Bird 2" src="../images/greater-lophorina-male.png">
             </div>
 
             <div id="other-bird-3-select" class="bird-select">
-                <img id="other-bird-3-female" alt="Female Other Bird 3" src="">
-                <img id="other-bird-3-male" alt="Male Other Bird 3" src="">
+                <img id="other-bird-3-female" class="female" alt="Female Other Bird 3" src="../images/greater-lophorina-female.png">
+                <img id="other-bird-3-male" class="male" alt="Male Other Bird 3" src="../images/greater-lophorina-male.png">
             </div>
         </div>
 
         <button id="choose-species">Choose a Species</button>
     </div>
 
-    <div id="game" class="screen hidden">
+    <div id="game" class="screen">
         <div id="bars">
             <div id="love-meter" class="meter-bar">
                 <div id="love-progress" class="progress-bar"></div>
@@ -70,7 +70,7 @@
 
         <div id="dialog-and-actions">
             <div id="dialog">
-                <p>Placehorder text</p>
+                <p>A female appeared!</p>
             </div>
     
             <div id="actions" class="button-choice">
@@ -82,10 +82,10 @@
         </div>
     </div>
 
-    <div id="lose" class="screen hidden">
+    <div id="lose" class="screen">
         <h2>It wasn't meant to be...</h2>
 
-        <div id="illustration">
+        <div class="illustration">
             <img class="male" alt="a male bird" src="../images/greater-lophorina-male.png">
             <img id="broken-heart" alt="a broken cartoon love heart" src="../images/broken-heart.png">
         </div>
@@ -111,18 +111,20 @@
         </div>
     </div>
 
-    <div id="info" class="screen hidden">
-        <div id="info-box">
-            <h2></h2>
-            <p></p>
+    <div id="info" class="screen">
+        <div id="info-layout">
+            <div id="info-box">
+                <h2>About Greater Lophorina</h2>
+                <p>The Greater Lophorina lives in the rainforests of New Guinea. With far fewer females than males, competition is fierce, leading to an elaborate courtship display. Males clear a “dance floor,” call to attract a female, then transform—spreading their black cape and shimmering blue-green feathers into an oval shape while hopping and snapping their tail feathers. Females are picky, rejecting 15-20 suitors before choosing a mate. As a polygynous species, males mate with multiple females, spending hours each day perfecting their mesmerising performance.</p>
+            </div>
+    
+            <div id="bird-collage">
+                <img class="female" alt="a female bird" src="../images/greater-lophorina-female.png">
+                <img class="male" alt="a male bird" src="../images/greater-lophorina-male.png">
+            </div>    
         </div>
 
-        <div id="bird-collage">
-            <img class="male" alt="a male bird" src="">
-            <img id="female" alt="a female bird" src="">
-
-            <button class="choose-another-bird">Choose Another Bird</button>
-        </div>
+        <button class="choose-another-bird">Choose Another Bird</button>
     </div>
 </body>
 </html>

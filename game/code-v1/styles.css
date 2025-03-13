@@ -33,6 +33,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
+    padding-top: 80px;
 	line-height: 1;
 }
 
@@ -64,7 +65,7 @@ table {
 }
 
 body {
-    height: 100vh;
+    /* height: 100vh; */
     background-image: linear-gradient(#99FFFF, #006600);
     background-color: #006600; /* Used if the image is unavailable */
     background-position: center;
@@ -84,10 +85,11 @@ img {
 }
 
 .screen {
-    position: absolute;
+    margin: auto;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     width: 1200px;
     height: 750px;
     padding: 40px 80px;
@@ -126,13 +128,19 @@ img {
     flex: 1;
     padding: 20px;
     border-radius: 1000px 1000px 100px 100px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #e6e6e6;
+    border: 2px solid #e6e6e6;
 
     background-image: linear-gradient(#ffffff, #ffffff00);
 
     transition: all 0.2s ease-in-out;
+}
+
+.bird-select .female {
+    transform: translateY(30%);
+}
+
+.bird-select .male {
+    transform: translateY(-20%);
 }
 
 .bird-select:hover {
@@ -167,6 +175,7 @@ button:hover {
 
 #logo {
     height: 80px;
+    transform: translateX(-10px);
 }
 
 header {
@@ -253,7 +262,7 @@ header {
     gap: 20px;
 }
 
-#dialog {
+#dialog, #info-box {
     padding: 40px;
     background-color: #ffffff;
     border-radius: 20px;
@@ -284,4 +293,46 @@ header {
 /* LOSE AND WIN SCREEN END */
 
 /* INFO SCREEN START */
+#info {
+    padding-top: 80px;
+}
+
+#info-layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+#info-box {
+    flex: 1;
+}
+
+#info-box h2 {
+    margin-bottom: 20px;
+}
+
+#info-box p {
+    line-height: 150%;
+}
+
+#bird-collage {
+    flex: 1;
+}
+
+#bird-collage .female {
+    transform: translateY(10%);
+}
+
+#bird-collage .male {
+    transform: translateY(-40%);
+}
+
+#info button {
+    /* position: absolute; */
+    /* bottom: 40px; */
+    position: relative;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 /* INFO SCREEN END */
