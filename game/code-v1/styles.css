@@ -59,6 +59,10 @@ table {
 
 /* SELECT SCREEN START */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     height: 100vh;
     background-image: linear-gradient(#99FFFF, #006600);
@@ -175,7 +179,14 @@ header {
 /* SELECT SCREEN END */
 
 /* GAME SCREEN START */
-.progress-bar {
+#game {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.meter-bar {
+    position: relative;
     width: auto;
     height: 40px;
     background-color: #ffffff;
@@ -183,15 +194,69 @@ header {
     border: 2px solid #e6e6e6;
 }
 
+.progress-bar {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    height: 40px;
+    width: 100px;
+    border-radius: 1000px;
+}
+
+#love-progress {
+    border: 2px solid #CC0066;
+    background-color: #FF0080;
+}
+
+#timer-progress {
+    border: 2px solid #CC6600;
+    background-color: #FF8000;
+}
+
 #play-field {
     display: flex;
-    justify-content: center;
-    align-self: stretch;
+    justify-content: space-around;
+    height: 320px;
 }
 
 #bars {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+#actions {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+#actions button {
+    flex: 1;
+}
+
+.bar-icon {
+    position: relative;
+    z-index: 1;
+    top: 7px;
+    left: 14px;
+}
+
+#play-field img {
+    width: auto;
+    max-height: 100%;
+}
+
+#dialog-and-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#dialog {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 2px solid #e6e6e6;
 }
 /* GAME SCREEN END */
