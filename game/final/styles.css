@@ -147,6 +147,11 @@ img {
     border-color: #009999;
 }
 
+.selected {
+    background-image: linear-gradient(#00CCCC, #00CCCC00);
+    border-color: #009999;
+}
+
 h2 {
     font-size: 30px;
     font-weight: 600;
@@ -163,7 +168,7 @@ button {
 
     font-weight: 300;
 
-    transition: all 0.2s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 
 button:hover {
@@ -207,18 +212,52 @@ header {
     top: -2px;
     left: -2px;
     height: 40px;
-    width: 100px;
     border-radius: 1000px;
 }
 
 #love-progress {
+    width: 5.5%;
     border: 2px solid #CC0066;
     background-color: #FF0080;
+    transition: all 0.25s ease 0 normal;
 }
 
 #timer-progress {
-    border: 2px solid #CC6600;
-    background-color: #FF8000;
+    width: calc(100% + 4px);
+    border: 2px solid #00CC00;
+    background-color: #00FF00;
+}
+
+.timer-animation {
+    animation: timer-animation 10s linear 0 1 normal forwards;
+}
+
+@keyframes timer-animation {
+    0% {
+        width: calc(100% + 4px);
+        border-color: #00CC00;
+        background-color: #00FF00;
+    }
+    25% {
+        width: 75%;
+        border-color: #66CC00;
+        background-color: #80FF00;
+    }
+    50% {
+        width: 50%;
+        border-color: #CCCC00;
+        background-color: #FFFF00;
+    }
+    75% {
+        width: 25%;
+        border-color: #CC6600;
+        background-color: #FF8000;
+    }
+    100% {
+        width: 0;
+        border-color: #CC0000;
+        background-color: #FF0000;
+    }
 }
 
 #play-field {
